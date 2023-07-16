@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
       />
       <div className='z-20'>
         <h2 className='text-sm   uppercase mb-2 text-ct-text-primary tracking-[15px]'>
-          Graphic Designer /\ ILLUSTRATION ARTIST
+          Graphic Designer && ILLUSTRATION ARTIST
         </h2>
         <h1 className='text-5xl mt-2 lg:text-6xl font-semibold px-10'>
           <span className='mr-3 text-ct-primary-02'>{text}</span>
