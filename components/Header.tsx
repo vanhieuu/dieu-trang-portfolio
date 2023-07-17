@@ -25,12 +25,12 @@ export default function Header({}: Props) {
       >
         <SocialIcon
           url={'https://www.facebook.com/son.vi.7731'}
-          fgColor='#EE9E8E'
+          fgColor='#e57e70'
           bgColor='transparent'
         />
         <SocialIcon
           url={'https://www.instagram.com/tooddieeu_/'}
-          fgColor='#EE9E8E'
+          fgColor='#e57e70'
           bgColor='transparent'
         />
       </motion.div>
@@ -53,7 +53,7 @@ export default function Header({}: Props) {
         <SocialIcon
           className='cursor-pointer'
           network='email'
-          fgColor='#EE9E8E'
+          fgColor='#e57e70'
           bgColor='transparent'
           url=''
         />

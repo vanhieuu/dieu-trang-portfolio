@@ -16,9 +16,9 @@ module.exports = {
       colors: {
         'ct-primary': {
           '01': '#FF8413',
-          '02':'#ee9e8e',
+          '02':'#e57e70',
           "03":"#FFDBC3",
-          "4":"#FFF5E0"
+          "04":"#FFF5E0"
           
         },
         'ct-secondary': {

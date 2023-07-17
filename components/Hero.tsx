@@ -28,7 +28,7 @@ const Hero = (props: Props) => {
         </h2>
         <h1 className='text-4xl mt-2 lg:text-5xl font-semibold px-8'>
           <span className='mr-3 text-ct-primary-02'>{text}</span>
-          <Cursor cursorColor='#EE9E8E' />
+          <Cursor cursorColor='#e57e70' />
         </h1>
         <div className='pt-5'>
           <Link href={'#about'}>
