@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 import { Photoshop,Illustrator } from 'iconsax-react';
+import {SiAdobepremierepro,SiAdobeindesign} from 'react-icons/si'
 type Props = {};
 
 const Skill = (props: Props) => {

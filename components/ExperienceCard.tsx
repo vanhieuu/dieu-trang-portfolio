@@ -46,23 +46,23 @@ const ExperienceCard = (props: Props) => {
             {' ' + props.timeStart}{' '}
           </span>{' '}
           -{' '}
-          <p className='px-1'>
+          <span className='px-1'>
             {props.timeEnd === 'Nay' ? (
               <span className='text-ct-text-primary font-bold'>
                 {' '}
                 {props.timeEnd}
               </span>
             ) : (
-              <p>
+              <span>
                 {' '}
                 Kết thúc{' '}
                 <span className='text-ct-text-primary font-bold'>
                   {' '}
                   {props.timeEnd}
                 </span>{' '}
-              </p>
+              </span>
             )}
-          </p>
+          </span>
         </p>
         <ul className='list-disc space-y-4 ml-5 text-ct-text-primary'>
           {props.summary?.map((item, index) => {

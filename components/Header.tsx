@@ -2,6 +2,9 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import { SiZalo } from 'react-icons/si';
+import Link from 'next/link';
+
 type Props = {};
 
 export default function Header({}: Props) {
@@ -28,11 +31,11 @@ export default function Header({}: Props) {
           fgColor='#e57e70'
           bgColor='transparent'
         />
-        <SocialIcon
-          url={'https://www.instagram.com/tooddieeu_/'}
-          fgColor='#e57e70'
-          bgColor='transparent'
-        />
+        <div className='w-[32px] h-[32px] items-center justify-center rounded-full bg-ct-primary-02 py-auto '>
+          <Link href='http://zaloapp.com/qr/p/ldp6fdp0q1wg'>
+          <SiZalo color='#FFDBC3' size={26}  className='mx-auto mt-1'/>
+          </Link>
+        </div>
       </motion.div>
       <motion.div
         initial={{
@@ -57,7 +60,9 @@ export default function Header({}: Props) {
           bgColor='transparent'
           url=''
         />
-        <p className='uppercase hidden md:inline-flex text-sm text-ct-primary-02'>Get In Touch</p>
+        <p className='uppercase hidden md:inline-flex text-sm text-ct-primary-02'>
+          Get In Touch
+        </p>
       </motion.div>
     </header>
   );
