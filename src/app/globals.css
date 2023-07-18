@@ -18,12 +18,22 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
     rgb(var(--background-start-rgb));
 }
 
 @layer components {
   .heroButton {
-    @apply px-6 mx-6  py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-ct-primary-02 hover:text-ct-text-primary/20  hover:bg-ct-primary-02/20 ;
+    @apply px-6 mx-6  py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-ct-primary-02 hover:text-ct-text-primary/20  hover:bg-ct-primary-02/20;
+  }
+  .skillCard {
+    @apply hover:scale-110  transition-all duration-300;
+  }
+  .contactInput {
+    @apply outline-none bg-ct-primary-02/10 rounded-sm border-b px-6 py-4 border-[#FFDBC3] text-ct-text-primary placeholder-gray-500 transition-all focus:border-[#e57e70]  focus:text-[#190933] hover:border-[#e57e70];
   }
 }

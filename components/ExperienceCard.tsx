@@ -14,7 +14,7 @@ type Props = {
 
 const ExperienceCard = (props: Props) => {
   return (
-    <article className='flex snap-center bg-ct-primary-03 p-10 flex-col rounded-lg items-center space-y-7 flex-shrink-0  w-[500px] md:w-[600px] xl:w-[900px] '>
+    <article className='  hover:opacity-100 opacity-80 cursor-pointer transition-opacity duration-200 overflow-hidden flex flex-col snap-center bg-ct-primary-03 p-10  rounded-lg items-center space-y-7 flex-shrink-0  w-[400px] md:w-[500px] xl:w-[800px] '>
       <motion.img
         initial={{
           y: -100,
@@ -25,7 +25,7 @@ const ExperienceCard = (props: Props) => {
         viewport={{ once: true }}
         src={props.img}
         alt={`Avatar ${props.nameCompany}`}
-        className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center '
+        className='w-28 h-28 rounded-full      object-cover object-center '
       />
       <div className='px-0 md:px-10'>
         <div className='text-4xl font-light'>{props.position}</div>

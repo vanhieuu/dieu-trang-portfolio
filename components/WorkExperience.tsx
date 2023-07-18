@@ -80,12 +80,12 @@ const WorkExperience = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='flex flex-col relative  h-full md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
+      className='h-screen flex relative  flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center'
     >
       <h3 className='text-2xl lg:top-0 top-20 absolute uppercase tracking-[20px] text-ct-text-primary'>
         Experience
       </h3>
-      <div className='w-full mt-20 flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
+      <div className=' w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory   scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#e57e70]/80  '>
         {experience.map((item, index) => {
           return (
             <ExperienceCard
